@@ -2,7 +2,7 @@
 
 Meals App using new feature Hooks with Redux
 
-![demo-app](https://github.com/rendystdy/Builder-burger-app/blob/master/BURGER-BUILDER-APP.gif)
+![demo-app](https://github.com/rendystdy/meals-app/blob/master/Meals_App.gif)
 
 ###  How to use
 -   git clone `https://github.com/rendystdy/meals-app.git` in the terminal
