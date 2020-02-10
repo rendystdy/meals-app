@@ -8,7 +8,6 @@ import DefaultText from '../components/DefaultText';
 
 const CategoryMealsScreen = props => {
   const catId = props.navigation.getParam('categoryId');
-  console.log(catId);
 
   const availableMeals = useSelector(state => state.meals.filteredMeals);
 
@@ -16,7 +15,6 @@ const CategoryMealsScreen = props => {
     meal => meal.categoryIds.indexOf(catId) >= 0,
   );
 
-  console.log('displayedMeals', displayedMeals);
   if (displayedMeals.length === 0) {
     return (
       <View style={styles.content}>

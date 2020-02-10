@@ -33,9 +33,6 @@ const FiltersScreen = props => {
   const [isLactoseFree, setIsLactoseFree] = useState(false);
   const dispatch = useDispatch();
   const filteredMeals = useSelector(state => state.meals.filteredMeals);
-  console.log(isGlutenFree, isVegan, isVegetarian, isLactoseFree);
-
-  console.log(filteredMeals);
 
   const saveFilters = useCallback(() => {
     const appliedFilters = {
@@ -45,7 +42,6 @@ const FiltersScreen = props => {
       lactoseFree: isLactoseFree,
     };
     dispatch(setFilters(appliedFilters));
-    console.log(appliedFilters);
   }, [isGlutenFree, isVegan, isVegetarian, isLactoseFree, dispatch]);
 
   useEffect(() => {
